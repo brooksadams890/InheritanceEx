@@ -34,6 +34,27 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
-        }
+
+            var eagle = new Bird()
+            {
+                HasFeathers = true,
+                BuildsNest = true,
+                CanFly = true,
+                CanSing = false,
+                HasTail = true
+            };
+
+            var snake = new Reptile()
+            {
+                CanSwim = true,
+                Legs = 0,
+                HasForkedTonge = true,
+                HasScales = true,
+                Movement = "silthers"
+            };
+
+            eagle.PrintDetails();
+            snake.PrintDetails();
+
     }
 }
